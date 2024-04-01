@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+    box-sizing:border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+
+
+}
+
+div {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 380px;
+}
+
+div h1 {
+    background-color: rgb(52, 52, 52);
+    color: rgb(0, 152, 152);
+    font-size: 32px;
+    border-radius: 50px;
+}
+div p {
+    font-size: 24px;
+    color: #525252;
+    margin-bottom: 35px;
+}
+
+div input {
+    /* position: absolute; */
+    background-color: rgb(0, 152, 152);
+    color: rgb(52, 52, 52);
+    font-size: 18px;
+    font-weight: bold;
+    width: 350px;
+    margin-bottom: 35px;
+    border-radius: 50px;
+    height: 30px;
+}
+div button {
+    background: linear-gradient(
+      90deg,
+        rgb(52, 52, 52) 25%,
+        rgb(0, 152, 152) 100%
+    ); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 152, 152);
+    width: 350px;
+    font-size: 18px;
+    margin-bottom: 35px;
+    border-radius: 50px;
+    height: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(52, 52, 52);
+}
+
+input::placeholder {
+    text-align: center;
+    color: black;
+}
+
+.respuesta {
+    color: rgb(0, 152, 152);
+}
+.escrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:991px){
+    body{
+        padding: 10px;
+
+    }
+
+    div {
+        padding: 20px;
+        width: 100%;
+    }
+    .escrito {
+        padding: 10px 0px 10px 0px;
+        width: 100%;
+    }
+
+    .btn{
+        height: 45px;
+        width: 100%;
+    }
+
+
+
+}
